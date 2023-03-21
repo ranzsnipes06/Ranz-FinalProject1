@@ -7,10 +7,17 @@
       "default",
       {
         "ignore": [
-          "-webkit-box-reflect"
+          "-webkit-box-reflect",
+          "width: fit-content"
         ]
       }
     ],
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ]
   }
 }

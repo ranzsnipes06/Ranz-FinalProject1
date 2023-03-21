@@ -11,9 +11,11 @@
     <script src="https://kit.fontawesome.com/82fac282cd.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>
-    <div class="header">
+<!--------------------------------------------- START of HEADER ------------------------------------------------------------>
+    <div class="header" id="home">
         <div class="container">
             <nav>
             <a href="#" class="header-brand navbar-brand">PORT<span class="header-brand__span">FOLIO</span></a>
@@ -50,11 +52,138 @@
                     <span style="--i:18">l</span>
                     <span style="--i:19">o</span>
                     <span style="--i:20">p</span>
-                    <span style="--i:19">e</span>
-                    <span style="--i:20">r</span>
+                    <span style="--i:21">e</span>
+                    <span style="--i:22">r</span>
                 </div>
             </div>
         </div>
     </div>
+<!------------------------------------------- END of HEADER ----------------------------------------------------->
+
+<!-- --------------------------------------START of ABOUT SECTION------------------------------------------------>
+    <section>
+        <div class="about" id="about">
+            <div class="about__container">
+                <div class="about-row">
+                    <div class="about-img">
+                        <img src="./image/about.jpg" alt="#">
+                    </div>
+                    <div class="about-text1">
+                        <h1>About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa eos aspernatur blanditiis possimus odit illo consectetur quidem pariatur deserunt dolores error quaerat voluptate repudiandae, nisi eligendi maxime, quam dolorum expedita?</p>
+                        <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Developer</span>
+                                    <br>HTML
+                                    <br>CSS
+                                    <br>JAVA
+                                </li>
+                                <li><span>Computer Technician</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>November 2021 - Present</span>
+                                    <br>MIS-Staff</li>
+                                <li><span>September 2021 - November 2021</span>
+                                    <br>Junior Technician</li>
+                                <li><span>October 2017 - January 2020</span>
+                                    <br>Customer Associate</li>
+                                <li><span>March 2013 - June 2017</span>
+                                    <br>IT-Specialist</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Tertiary</span>
+                                    <br>Microsystems International Institute of Technology</li>
+                                <li><span>Secondary</span>
+                                    <br>Luray II National High School</li>
+                                <li><span>Primary</span>
+                                    <br>Liloan Central School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ---------------------------------------END of ABOUT SECTION--------------------------------------------->
+
+
+<!-- ------------------------------------ START OF PORTFOLIO SECTION------------------------------------------>
+    <section>
+        <div class="portfolio" id="portfolio">
+            <div class="portfolio__container">
+                <h1 class="portfolio-text1">My Portfolio</h1>
+                <div class="portfolio-list">
+                    <div class="portfolio-img">
+                        <img src="image/picturecode.jpg" alt="dreamjob">                        
+                        <img src="image/comptech.jpg" alt="myjob">                                           
+                        <img src="image/motor.jpeg" alt="myhobbies">
+                    </div>
+                </div>    
+                <a href="#" class="portfolio-btn">See more</a>
+            </div>
+        </div>
+    </section>
+<!-- --------------------------------END of PORTFOLIO SECTION--------------------------------------------->
+
+<!-- -------------------------------------START OF CONTACT------------------------------------------------>
+
+    <section>
+        <div class="contact" id="contact">
+            <div class="contact__container">
+                <div class="contact__row">
+                    <div class="contact-left">
+                        <h2>Contact Me</h2>
+                        <p><i class="fa-sharp fa-solid fa-envelope-circle-check"></i>ranzsnipes06@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0956-602-1062</p>
+                        <div class="contact-left__icons">
+                          <a><i class="fa-brands fa-facebook"></i></a>
+                          <a><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="downloads/Ran-Mar.pdf" download class="contact__btn contact__btn--1">Donwload CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                          <input type="text" placeholder="Your name" required>
+                          <input type="text" placeholder="Your email" required>
+                          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                          <button type="submit" class="contact__btn contact__btn--2">Submit</button>
+                        </form>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- ---------------------------------------END OF CONTACT------------------------------------------------>
+
+
+
+<!------------------------------------- START OF SCRIPT TAB ---------------------------------------------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<!----------------------------------------- END OF SCRIPT TAB -------------------------------------------->
 </body>
 </html>
