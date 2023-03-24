@@ -8,7 +8,8 @@
       {
         "ignore": [
           "-webkit-box-reflect",
-          "width: fit-content"
+          "width: fit-content",
+          "scroll-behavior"
         ]
       }
     ],
