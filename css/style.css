@@ -13,7 +13,6 @@
     background-size: cover;
     background-position: center;
 }
-
 /* -----------------------------START of NAVBAR------------------------- */
 .container{
     margin-left: 5%;
@@ -26,14 +25,9 @@
     font-size: 45px;
 }
 
-.fixed-top{
-    height: 15vh;
-    padding: 20px;
-    width: 100%;
-}
-
 .header-text img{
-    margin-top: 130px;
+    margin-top: -250px;
+    display: block;
     height: 50vh;
     width: 50vh;
     border-radius: 50%;
@@ -52,10 +46,6 @@
 {
     transform: scale(1.2);
 } 
-
-.sidemenu {
-    padding-left: 500px;
-}
 
 nav{
     /* background-color: red; */
@@ -137,13 +127,12 @@ nav ul li a:hover:after
 /* ------------------------End of navbar------------------------------- */
 
 /* ----------------------------Start of HEADER SECTION------------------------------- */
+
 .header-text{
     /* background-color: red; */
-    margin-top: 0%;
     color: white;
+    margin-top: 20%;
     margin-left: 5%;
-    padding: 0;
-    height: 100vh;
 }
 
 .header-text2{
@@ -609,7 +598,7 @@ nav ul li a:hover:after
     }
 
     .contact-row{
-        display: flex;
+        display: block;
         flex-direction: column;
     }
 
