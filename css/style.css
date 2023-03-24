@@ -25,6 +25,14 @@
     font-size: 45px;
 }
 
+.header-text img{
+    margin-top: -250px;
+    display: block;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%;
+}
+
 .header-brand__span{
     color: red;
 }
@@ -46,11 +54,11 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-nav ul{
+/* nav ul{
     margin-top: 0;
     margin-bottom: -1rem;
     margin-right: -6rem;
-}
+} */
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -66,6 +74,9 @@ nav ul li a{
     animation: nav;
 }
 
+.fa-solid{
+    display: none;
+}
 /* nav ul li a:after{
     content: '';
     width: 100%;
@@ -303,7 +314,6 @@ nav ul li a:hover:after
 }
 
 .portfolio-btn{
-    background-color: #6b706c;
     border: none;
     color: white;
     padding: 20px 45px;
@@ -314,12 +324,12 @@ nav ul li a:hover:after
     margin: 4px 2px;
     cursor: pointer;
     margin-top: 3%;
-    border: 1px solid #2ecc71;
+    border: 1px solid red;
     border-radius: 10px;
   }
 
   .portfolio-btn:hover{
-    background: #2ecc71;
+    background: grey;
     cursor: pointer;
   }
 
@@ -343,6 +353,8 @@ nav ul li a:hover:after
   
   .contact h2{
     font-size: 60px;
+    font-weight: 500;
+    margin-top: 0;
   }
   
   .contact-left{
@@ -352,16 +364,24 @@ nav ul li a:hover:after
   .contact-left p{
     margin-top: 30px;
   }
+  .contact-left p i{
+    margin-right: 15px;
+    color: white;
+  }
   
   .contact-left p{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #20e700;
-    margin: 15px;
-    font-size: 25px;
+    color: red;
+    margin: 10px;
+    font-size: 20px;
+
   }
   
   .contact-left__icons{
     margin-top: 15px;
+  }
+
+  .contact-left__icons a i{
+    margin-left: 10px;
   }
   
   .contact-left__icons a{
@@ -370,17 +390,18 @@ nav ul li a:hover:after
     margin-right: 15px;
     color: #d9d9d9;
     display: inline-block;
+    cursor: pointer;
   }
   
   .contact-left__icons a:hover{
-    color: #45893a;
+    color: red;
     transform: translateY(-5px);
   }
   
   .contact__btn{
     display: block;
     margin: 50px auto;
-    border: 1px solid #2ecc71;
+    border: 1px solid red;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -389,7 +410,7 @@ nav ul li a:hover:after
   }
   
   .contact__btn:hover{
-    background-color: #2ecc71;
+    background-color: grey;
   }
   
   .contact__btn.contact__btn--1{
@@ -401,6 +422,17 @@ nav ul li a:hover:after
     padding: 20px 0;
     border-radius: 20%;
   }
+
+  .contact-right input{
+    border: 1px solid red;
+    border-radius: 10px;
+  }
+
+  .contact-right textarea{
+    border: 1px solid red;
+    border-radius: 10px;
+  }
+  
   .contact-left, .contact-right{
     margin: auto;
   }
@@ -420,7 +452,7 @@ nav ul li a:hover:after
     border: 6px;
   
   }
-  
+
   .contact__btn.contact__btn--2{
     display: inline-block;
     background-color: #312d2d;
@@ -429,7 +461,7 @@ nav ul li a:hover:after
   }
   
   .contact__btn--2:hover{
-    background: #2ecc71;
+    background: grey;
     cursor: pointer;
   }
   
@@ -444,3 +476,133 @@ nav ul li a:hover:after
     font-weight: 300;
   }
 /*-----------------------------END OF CONTACT------------------------------ */
+
+
+
+/*----------------------------- Media Queries ------------------------------*/
+
+@media only screen and (max-width: 600px){
+    .header-text img{
+        text-align: center;
+        padding: 0 10px;
+        margin-top: -100px;
+        margin-left: 120px;
+    }
+    .header-text h1{
+        font-size: 40px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .waviy{
+        margin-top: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .fa-solid{
+        display: block;
+        font-size: 30px;;
+    }
+
+    nav ul{
+        background-color: rgb(128, 128, 128);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    nav i{
+        cursor: pointer;
+        color: red;
+    }
+
+    /*-----------------------------------START OF ABOUT--------------------------------------------*/
+    .about{
+        margin: 0;
+        height: 170vh;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-img img{
+        padding: 0 10px;
+        height: 50vh;
+        width: 100%;
+        margin-left: 180px;
+    }
+
+    .about-text1 h1{
+        font-size: 40px;
+    }
+
+    .about-text1 p{
+        font-size: 15px;
+        flex-basis: 100%;
+    }
+
+    .about-text1 h1, p{
+        margin-left: 50px;
+        align-items: center;
+        text-align: center;;
+        
+    }
+
+    /*-------------------------------END OF ABOUT-----------------------------------------*/
+
+    /*----------------------------START OF PORTFOLIO-----------------------------------------*/
+
+    .portfolio{
+        padding: 0 50px;
+        margin: o;
+        height: 300vh;
+        width: 100%;
+    }
+
+    .portfolio-img{
+        display: block;
+        flex-direction: column;
+    }
+    
+    .portfolio-img img{
+        height: 50%;
+        width: 70vh;
+        padding: 10%;
+        border-radius: 50px;
+    }
+
+    .portfolio-btn{
+        margin-top: 90%;
+    }
+
+    /*----------------------------END OF PORTFOLIO-----------------------------------------*/
+
+
+    /*----------------------------START OF CONTACT-----------------------------------------*/
+    .contact{
+        height: 130vh;
+    }
+
+    .contact-row{
+        display: block;
+        flex-direction: column;
+    }
+
+
+
+    /*----------------------------END OF CONTACT-----------------------------------------*/
+}
